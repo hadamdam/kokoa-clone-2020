@@ -2,21 +2,28 @@
 <html lang="kr">
     <head>
         <link rel="shortcut icon" href="https://nomadcoders.co/m.png">
-        <title>Sign In</title>
+        <title>Sign Up</title>
         <meta charset="utf-8">
-        <meta name="description" content="sign-in page">
+        <meta name="description" content="sign-up page">
     </head>
     <body>
-        <h1>Sign In</h1>
+        <h1>Sign Up</h1>
         <form>
-            <input type="file" accept="image"/>
-            <input placeholder="First Name" required/>
-            <input placeholder="Last Name" required/>
-            <input placeholder="Username" required/>
-            <input type="password" placeholder="Password" required minlength="10"/>
+            <label for="profile">Profile Photo</label>
+            <input id="profile" type="file" accept=".png, .pdf"/>
+
+            <label for="first-name">First Name</label>
+            <input id="first-name" placeholder="First Name" required/>
+            <label for="last-name">Last Name</label>
+            <input id="last-name" placeholder="Last Name" required/>
+            <label for="user-name">User Name</label>
+            <input id="user-name" placeholder="Username" required/>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password" required minlength="10"/>
             <input type="submit" value="Create Account"/>
         </form>
     </body>
 </html>
 
-<tagname required attrname="attrvalue">flflflflflfl</tagname>
+//id는 body안에 어떤 태그에도 넣을 수 있다. 단, 태그마다 하나의 id만 가질 수 있고
+//동일한 id를 두개 이상의 태그가 동시에 가질수 없다. 한 id는 한 태그만 갖고 있어야 함.

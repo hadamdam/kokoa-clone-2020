@@ -2,44 +2,47 @@
 <html lang="kr">
     <head>
         <meta charset="utf-8">
-        <title>The Andy Times</title>
         <style>
             html{
                 background-color: tomato;
             }
             body{
-                display:flex;
-                height:100vh;
-                justify-content: center;
-                align-items: center;
+                margin:0px;
+                padding:15px;
+                background-color: thistle;
+            }
+            div{
+                padding:15px;
             }
             #first{
-                background-color: blanchedalmond;
-                border:2px solid black;
-                width:300px;
-                height: 300px;
-                display:flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+                height: 150px;
+                width:150px;
+                background-color: whitesmoke;
             }
-            .in{
-                background-color: rgb(0, 99, 90);
-                border:3px solid white;
-                width:70px;
-                height:70px;
+            #second{
+                background-color: aquamarine;
+                height:120px;
+                width:120px;
             }
-            #middle{
-                width:260px;
-                border-style: dashed;
+            #third{
+                background-color: brown;
+                height: 90px;
+                width:90px;
+            }
+            #fourth{
+                background-color: chartreuse;
+                height:60px;
+                width:60px;
             }
         </style>
     </head>
     <body>
         <div id="first">
-            <div class="in"></div>
-            <div class="in" id="middle"></div>
-            <div class="in"></div>
+            <div id="second">
+                <div id="third">
+                    <div id="fourth"></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -8,18 +8,38 @@
                 background-color: tomato;
             }
             body{
-                background-color: thistle;
-                margin: 0;
+                display:flex;
+                height:100vh;
+                justify-content: center;
+                align-items: center;
             }
-            div{
-                margin: 50px 15px;
-                height:150px;
-                width:150px;
-                background-color: white;
+            #first{
+                background-color: blanchedalmond;
+                border:2px solid black;
+                width:300px;
+                height: 300px;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .in{
+                background-color: rgb(0, 99, 90);
+                border:3px solid white;
+                width:70px;
+                height:70px;
+            }
+            #middle{
+                width:260px;
+                border-style: dashed;
             }
         </style>
     </head>
     <body>
-        <div></div>
+        <div id="first">
+            <div class="in"></div>
+            <div class="in" id="middle"></div>
+            <div class="in"></div>
+        </div>
     </body>
 </html>

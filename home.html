@@ -4,18 +4,63 @@
         <meta charset="utf-8">
         <title>The Andy Times</title>
         <style>
+            body{
+                padding:30px;
+            }
             img{
                 width:400px;
                 height:400px;
+                margin-right: 30px;
+                margin-bottom: 15px;
                 transition: transform 2s ease-in-out;
             }
             img:hover{
                 transform:rotateZ(30deg);
             }
+            span{
+                padding:10px;
+                margin:5px;
+                transition: all 1s ease-in-out;
+            }
+            span:first-child{
+                font-size: 50px;
+                background-color: blue;
+                color:white;
+            }
+            span:first-child:hover{
+                background-color: white;
+                color:blue;
+                border-radius: 7px;
+            }
+            span:nth-child(2){
+                font-size: 30px;
+                background-color: pink;
+                color:white;
+            }
+            span:nth-child(2):hover{
+                background-color: white;
+                color: pink;
+                border-radius: 10px;
+            }
+            span:last-child{
+                font-size: 85px;
+                background-color: greenyellow;
+                color:white;
+            }
+            span:last-child:hover{
+                background-color: white;
+                color: greenyellow;
+                border-radius: 8px;
+            }
+
         </style>
     </head>
     <body>
         <img src="12.PNG"/>
-        <span>I love biology.</span>
+        <div>
+        <span>I</span>
+        <span>love</span>
+        <span>biology</span>
+        </div>
     </body>
 </html>

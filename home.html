@@ -4,98 +4,18 @@
         <meta charset="utf-8">
         <title>The Andy Times</title>
         <style>
-            html{
-                background-color: lightgray;
+            img{
+                width:400px;
+                height:400px;
+                transition: transform 2s ease-in-out;
             }
-            body{
-                height: 100vh;
-                display:flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                margin:0;
-            }
-            #up{
-                /* width:100vh; */
-                height:15vh;
-                /* background-color: aquamarine; */
-                display:flex;
-                justify-content: center;
-                align-items: flex-start;
-            }
-            #down{
-                width:500px;
-                /* height:85vh; */
-                /* background-color: chartreuse; */
-                display:flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items:flex-start;
-            }
-            h1{
-                margin-top:27px;
-            }
-            .color{
-                height:350px;
-                width:200px;
-                /* background-color: pink; */
-                margin: 10px 7px;
-                border:5px solid white;
-                position:relative;
-            }
-            main>div:first-child{
-                background-color: tomato;
-            }
-            main>div:nth-child(2){
-                background-color: teal;
-            }
-            main>div:nth-child(3){
-                background-color: burlywood;
-            }
-            main>div:nth-child(4){
-                background-color: thistle;
-            }
-            div>div{
-                height: 100px;
-                width: 200px;
-                position:absolute;
-                top:25px;
-                background-color: white;
-                /* display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start; */
-                /* padding:15px 0px; */
+            img:hover{
+                transform:rotateZ(30deg);
             }
         </style>
     </head>
     <body>
-        <header id="up"><h1>The Best Colors</h1></header>
-        <main id="down">
-            <div class="color">
-                <div class="info">
-                    <h4>Tomato</h4>
-                    <h5>#FF6347</h5>
-                </div>
-            </div>
-            <div class="color">
-                <div class="info">
-                    <h4>Teal</h4>
-                    <h5>#008080</h5>
-                </div>
-            </div>
-            <div class="color">
-                <div class="info">
-                    <h4>Burlywood</h4>
-                    <h5>#DEB887</h5>
-                </div>
-            </div>
-            <div class="color">
-                <div class="info">
-                    <h4>Thistle</h4>
-                    <h5>#D7BFD7</h5>
-                </div>
-            </div>
-        </main>
+        <img src="12.PNG"/>
+        <span>I love biology.</span>
     </body>
 </html>
